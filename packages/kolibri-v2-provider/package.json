@@ -1,0 +1,20 @@
+{
+  "name": "kolibri-v2-provider",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "module": "dist/kolibri-v2-provider.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.1.0"
+  },
+  "dependencies": {
+    "@public-ui/components": "^2.0.5",
+    "@public-ui/theme-default": "^2.0.5"
+  }
+}
