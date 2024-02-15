@@ -12,6 +12,7 @@
   "dependencies": {
     "kolibri-v1-provider": "link:../kolibri-v1-provider",
     "kolibri-v2-provider": "link:../kolibri-v2-provider",
+    "module-v1": "link:../module-v1",
     "module-v2": "link:../module-v2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

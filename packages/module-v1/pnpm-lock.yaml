@@ -4,179 +4,48 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-importers:
+dependencies:
+  '@public-ui/react':
+    specifier: ^2.0.5
+    version: 2.0.5(@public-ui/components@2.0.5)(react-dom@18.2.0)(react@18.2.0)
+  react:
+    specifier: ^18.2.0
+    version: 18.2.0
+  react-dom:
+    specifier: ^18.2.0
+    version: 18.2.0(react@18.2.0)
 
-  .: {}
-
-  packages/app:
-    dependencies:
-      kolibri-v1-provider:
-        specifier: link:../kolibri-v1-provider
-        version: link:../kolibri-v1-provider
-      kolibri-v2-provider:
-        specifier: link:../kolibri-v2-provider
-        version: link:../kolibri-v2-provider
-      module-v1:
-        specifier: link:../module-v1
-        version: link:../module-v1
-      module-v2:
-        specifier: link:../module-v2
-        version: link:../module-v2
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-    devDependencies:
-      '@types/react':
-        specifier: ^18.2.55
-        version: 18.2.55
-      '@types/react-dom':
-        specifier: ^18.2.19
-        version: 18.2.19
-      '@typescript-eslint/eslint-plugin':
-        specifier: ^6.21.0
-        version: 6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.56.0)(typescript@5.3.3)
-      '@typescript-eslint/parser':
-        specifier: ^6.21.0
-        version: 6.21.0(eslint@8.56.0)(typescript@5.3.3)
-      '@vitejs/plugin-react':
-        specifier: ^4.2.1
-        version: 4.2.1(vite@5.1.2)
-      eslint:
-        specifier: ^8.56.0
-        version: 8.56.0
-      eslint-plugin-react-hooks:
-        specifier: ^4.6.0
-        version: 4.6.0(eslint@8.56.0)
-      eslint-plugin-react-refresh:
-        specifier: ^0.4.5
-        version: 0.4.5(eslint@8.56.0)
-      typescript:
-        specifier: ^5.2.2
-        version: 5.3.3
-      vite:
-        specifier: ^5.1.0
-        version: 5.1.2
-
-  packages/kolibri-v1-provider:
-    dependencies:
-      '@public-ui/components':
-        specifier: ^1.7.12
-        version: 1.7.12
-      '@public-ui/theme-default':
-        specifier: ^1.7.12
-        version: 1.7.12(@public-ui/components@1.7.12)
-    devDependencies:
-      typescript:
-        specifier: ^5.2.2
-        version: 5.3.3
-      vite:
-        specifier: ^5.1.0
-        version: 5.1.2
-
-  packages/kolibri-v2-provider:
-    dependencies:
-      '@public-ui/components':
-        specifier: ^2.0.6
-        version: 2.0.6
-      '@public-ui/theme-default':
-        specifier: ^2.0.6
-        version: 2.0.6(@public-ui/components@2.0.6)
-    devDependencies:
-      typescript:
-        specifier: ^5.2.2
-        version: 5.3.3
-      vite:
-        specifier: ^5.1.0
-        version: 5.1.2
-
-  packages/module-v1:
-    dependencies:
-      '@public-ui/react':
-        specifier: ^2.0.6
-        version: 2.0.6(@public-ui/components@2.0.6)(react-dom@18.2.0)(react@18.2.0)
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-    devDependencies:
-      '@types/react':
-        specifier: ^18.2.55
-        version: 18.2.55
-      '@types/react-dom':
-        specifier: ^18.2.19
-        version: 18.2.19
-      '@typescript-eslint/eslint-plugin':
-        specifier: ^6.21.0
-        version: 6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.56.0)(typescript@5.3.3)
-      '@typescript-eslint/parser':
-        specifier: ^6.21.0
-        version: 6.21.0(eslint@8.56.0)(typescript@5.3.3)
-      '@vitejs/plugin-react':
-        specifier: ^4.2.1
-        version: 4.2.1(vite@5.1.2)
-      eslint:
-        specifier: ^8.56.0
-        version: 8.56.0
-      eslint-plugin-react-hooks:
-        specifier: ^4.6.0
-        version: 4.6.0(eslint@8.56.0)
-      eslint-plugin-react-refresh:
-        specifier: ^0.4.5
-        version: 0.4.5(eslint@8.56.0)
-      typescript:
-        specifier: ^5.2.2
-        version: 5.3.3
-      vite:
-        specifier: ^5.1.0
-        version: 5.1.2
-
-  packages/module-v2:
-    dependencies:
-      '@public-ui/react':
-        specifier: ^2.0.6
-        version: 2.0.6(@public-ui/components@2.0.6)(react-dom@18.2.0)(react@18.2.0)
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-    devDependencies:
-      '@types/react':
-        specifier: ^18.2.55
-        version: 18.2.55
-      '@types/react-dom':
-        specifier: ^18.2.19
-        version: 18.2.19
-      '@typescript-eslint/eslint-plugin':
-        specifier: ^6.21.0
-        version: 6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.56.0)(typescript@5.3.3)
-      '@typescript-eslint/parser':
-        specifier: ^6.21.0
-        version: 6.21.0(eslint@8.56.0)(typescript@5.3.3)
-      '@vitejs/plugin-react':
-        specifier: ^4.2.1
-        version: 4.2.1(vite@5.1.2)
-      eslint:
-        specifier: ^8.56.0
-        version: 8.56.0
-      eslint-plugin-react-hooks:
-        specifier: ^4.6.0
-        version: 4.6.0(eslint@8.56.0)
-      eslint-plugin-react-refresh:
-        specifier: ^0.4.5
-        version: 0.4.5(eslint@8.56.0)
-      typescript:
-        specifier: ^5.2.2
-        version: 5.3.3
-      vite:
-        specifier: ^5.1.0
-        version: 5.1.2
+devDependencies:
+  '@types/react':
+    specifier: ^18.2.55
+    version: 18.2.55
+  '@types/react-dom':
+    specifier: ^18.2.19
+    version: 18.2.19
+  '@typescript-eslint/eslint-plugin':
+    specifier: ^6.21.0
+    version: 6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.56.0)(typescript@5.3.3)
+  '@typescript-eslint/parser':
+    specifier: ^6.21.0
+    version: 6.21.0(eslint@8.56.0)(typescript@5.3.3)
+  '@vitejs/plugin-react':
+    specifier: ^4.2.1
+    version: 4.2.1(vite@5.1.2)
+  eslint:
+    specifier: ^8.56.0
+    version: 8.56.0
+  eslint-plugin-react-hooks:
+    specifier: ^4.6.0
+    version: 4.6.0(eslint@8.56.0)
+  eslint-plugin-react-refresh:
+    specifier: ^0.4.5
+    version: 0.4.5(eslint@8.56.0)
+  typescript:
+    specifier: ^5.2.2
+    version: 5.3.3
+  vite:
+    specifier: ^5.1.0
+    version: 5.1.2
 
 packages:
 
@@ -724,40 +593,20 @@ packages:
       fastq: 1.17.1
     dev: true
 
-  /@public-ui/components@1.7.12:
-    resolution: {integrity: sha512-0KUa1mKTnS5TfWxXWWWV56WmRHAWDzKWl2wGRqV3UdWhVixvidt4iL0/07V64K6UUtPIZ+fRk2q6rRt/eilH4A==}
+  /@public-ui/components@2.0.5:
+    resolution: {integrity: sha512-dIeH9qCAolVaXrMlf/Wk8Z3JzW02l+1TG8U+lzYMEQfN2r/1m4f1JAeTXYASWT6S5nzpbsGmtjrG2zKNMtcyyg==}
     dev: false
 
-  /@public-ui/components@2.0.6:
-    resolution: {integrity: sha512-LNvyslzg2WK8zWKoqZscyWtvNL24C9bfRZVwv5r5ulwoS+fAMIdT8CQLOUIfgvPGJPskQ18Hva0GecvYGV8SAw==}
-    dev: false
-
-  /@public-ui/react@2.0.6(@public-ui/components@2.0.6)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-rsLj2RltUxhpWEcDKO5798giXY89BHEF53KmHiczazwmgX35k5AEDynQ78O+cV6Pzogr5VVCHPfFyF+WpVLBJQ==}
+  /@public-ui/react@2.0.5(@public-ui/components@2.0.5)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-ZMk3rYYQod5gbRQmc1NTMkwqOaJma3fjj6qjyECLDFF1B2AtezYyp4jC169xkqDhC0Ov0G7hozEMnXvUFYctkQ==}
     peerDependencies:
-      '@public-ui/components': 2.0.6
+      '@public-ui/components': 2.0.5
       react: '>=16.14.0'
       react-dom: '>=16.14.0'
     dependencies:
-      '@public-ui/components': 2.0.6
+      '@public-ui/components': 2.0.5
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@public-ui/theme-default@1.7.12(@public-ui/components@1.7.12):
-    resolution: {integrity: sha512-HknhkYJSSKlfymFDy0AEY+eASOo6msRGdaHVCclHC+TcedHXh47MI/EEwj6io3v6EsUbh4833iPnwg0JGvGPjg==}
-    peerDependencies:
-      '@public-ui/components': 1.7.12
-    dependencies:
-      '@public-ui/components': 1.7.12
-    dev: false
-
-  /@public-ui/theme-default@2.0.6(@public-ui/components@2.0.6):
-    resolution: {integrity: sha512-K+iJTszLI2iQjtHH3TOwX+Fj2czknP46QFwH0M2iX9CeGU8vgSk+3hKg1doNMeB/IXZT6Wee5qzY72odOL5wow==}
-    peerDependencies:
-      '@public-ui/components': 2.0.6
-    dependencies:
-      '@public-ui/components': 2.0.6
     dev: false
 
   /@rollup/rollup-android-arm-eabi@4.10.0:

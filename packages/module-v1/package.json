@@ -1,9 +1,9 @@
 {
-  "name": "module-v2",
+  "name": "module-v1",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "module": "dist/module-v2.js",
+  "module": "dist/module-v1.js",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

@@ -1,3 +1,4 @@
+import {Module as ModuleV1} from '../../module-v1'
 import {Module as ModuleV2} from '../../module-v2'
 
 function App() {
@@ -6,8 +7,7 @@ function App() {
       {/*<kol-button _label="kol-button"></kol-button>*/}
         <h1>Micro Frontends</h1>
 
-        V1 Frontend: tbd
-
+        <ModuleV1 />
         <ModuleV2 />
       </>
   )
