@@ -6,14 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+		"build:deps": "pnpm --filter app^... build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
-    "kolibri-v1-provider": "link:../kolibri-v1-provider",
-    "kolibri-v2-provider": "link:../kolibri-v2-provider",
-    "module-v1": "link:../module-v1",
-    "module-v2": "link:../module-v2",
+    "kolibri-v1-provider": "0.0.0",
+    "kolibri-v2-provider": "0.0.0",
+    "module-v1": "0.0.0",
+    "module-v2": "0.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
