@@ -1,4 +1,4 @@
-import {KolButton} from "@public-ui/react";
+// import {KolButton} from "@public-ui/react";
 import {useState} from "react";
 
 export default () => {
@@ -7,6 +7,7 @@ export default () => {
     return (<div>
         <h2>V2 micro frontend</h2>
 
-        <KolButton _label={`KolButton ${counter}`} _on={{onClick: () => setCounter(counter + 1)}}></KolButton>
+        {/* @ts-ignore */}
+        <kol-button-v2 _label={`KolButton ${counter}`} _on={{onClick: () => setCounter(counter + 1)}}></kol-button-v2>
     </div>)
 }

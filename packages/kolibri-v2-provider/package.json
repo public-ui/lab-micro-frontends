@@ -14,7 +14,7 @@
     "vite": "^5.1.0"
   },
   "dependencies": {
-    "@public-ui/components": "^2.0.6",
+    "@public-ui/components": "link:../../../kolibri-multi/packages/components",
     "@public-ui/theme-default": "^2.0.6"
   }
 }
