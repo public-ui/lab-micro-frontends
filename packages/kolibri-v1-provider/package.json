@@ -3,18 +3,29 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "module": "dist/kolibri-v1-provider.js",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && unbuild",
     "preview": "vite preview"
   },
   "devDependencies": {
     "typescript": "^5.2.2",
+    "unbuild": "^2.0.0",
     "vite": "^5.1.0"
   },
   "dependencies": {
     "@public-ui/components": "^1.7.12",
     "@public-ui/theme-default": "^1.7.12"
-  }
+  },
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/main.mjs",
+      "require": "./dist/main.cjs"
+    }
+  },
+  "main": "./dist/main.cjs",
+  "module": "./dist/main.mjs",
+  "types": "./dist/main.d.ts"
 }
