@@ -106,13 +106,13 @@ importers:
 
   packages/kolibri-v2-provider:
     dependencies:
-      '@public-ui/components':
-        specifier: link:../../../kolibri-multi/packages/components
-        version: link:../../../kolibri-multi/packages/components
       '@public-ui/theme-default':
         specifier: ^2.0.6
         version: 2.0.6(@public-ui/components@kolibri-multi+packages+components)
     devDependencies:
+      '@public-ui/components':
+        specifier: link:../../../kolibri-multi/packages/components
+        version: link:../../../kolibri-multi/packages/components
       typescript:
         specifier: ^5.2.2
         version: 5.3.3
