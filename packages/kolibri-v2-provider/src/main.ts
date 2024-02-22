@@ -9,5 +9,3 @@ export async function registerKolibri() {
         } as any); // https://github.com/ionic-team/stencil/issues/2847
     });
 }
-
-

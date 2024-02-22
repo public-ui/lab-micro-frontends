@@ -96,13 +96,13 @@ importers:
 
   packages/kolibri-v1-provider:
     dependencies:
-      '@public-ui/components':
-        specifier: ^1.7.12
-        version: 1.7.12
       '@public-ui/theme-default':
         specifier: ^1.7.12
         version: 1.7.12(@public-ui/components@1.7.12)
     devDependencies:
+      '@public-ui/components':
+        specifier: ^1.7.12
+        version: 1.7.12
       typescript:
         specifier: ^5.2.2
         version: 5.3.3
@@ -812,7 +812,6 @@ packages:
 
   /@public-ui/components@1.7.12:
     resolution: {integrity: sha512-0KUa1mKTnS5TfWxXWWWV56WmRHAWDzKWl2wGRqV3UdWhVixvidt4iL0/07V64K6UUtPIZ+fRk2q6rRt/eilH4A==}
-    dev: false
 
   /@public-ui/components@2.0.6:
     resolution: {integrity: sha512-LNvyslzg2WK8zWKoqZscyWtvNL24C9bfRZVwv5r5ulwoS+fAMIdT8CQLOUIfgvPGJPskQ18Hva0GecvYGV8SAw==}
