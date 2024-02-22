@@ -1,6 +1,6 @@
-import pkg from './package.json';
+const pkg = require('./package.json');
 
-export default {
+module.exports = {
   input: 'dist/index.js',
 
   external: ['path', 'node-sass', 'fs', 'util'],
