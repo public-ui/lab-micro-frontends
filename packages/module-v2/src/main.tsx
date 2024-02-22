@@ -1,10 +1,7 @@
 import Module from "./Module.tsx";
-// import ReactDOM from 'react-dom/client'
+import { setCustomTagNameTransformer } from '@public-ui/react'
 
-export {Module}
+const transformTagName = (tagName: string) => `${tagName}-v2`;
+setCustomTagNameTransformer(transformTagName);
 
-// ReactDOM.createRoot(document.getElementById('root')!).render(
-// <React.StrictMode>
-//     <Module />
-// </React.StrictMode>,
-// )
+export { Module }
