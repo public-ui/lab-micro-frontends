@@ -1,1 +1,0 @@
-export { reactOutputTarget } from './plugin';
