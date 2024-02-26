@@ -2,10 +2,16 @@ import {register} from '@public-ui/components';
 import {defineCustomElements} from '@public-ui/components/dist/loader';
 import {DEFAULT} from '@public-ui/theme-default';
 
+const transformTagName = (tagName: string) => {
+    return `${tagName}-v2`
+};
+
 export async function registerKolibri() {
-    await register(DEFAULT, []).then(() => {
+    await register(DEFAULT, [], {
+        transformTagName,
+    }).then(() => {
         void defineCustomElements(window, {
-            transformTagName: (tagName: string) => `${tagName}-v2`,
+            transformTagName,
         } as any); // https://github.com/ionic-team/stencil/issues/2847
     });
 }
