@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@public-ui/react": "^2.0.6",
+    "@public-ui/react": "^1.7.17",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -27,15 +27,15 @@
     "unbuild": "^2.0.0",
     "vite": "^5.1.0"
   },
-	"sideEffects": false,
-	"exports": {
-		".": {
-			"types": "./dist/main.d.ts",
-			"import": "./dist/main.mjs",
-			"require": "./dist/main.cjs"
-		}
-	},
-	"main": "./dist/main.cjs",
-	"module": "./dist/main.mjs",
-	"types": "./dist/main.d.ts"
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/main.mjs",
+      "require": "./dist/main.cjs"
+    }
+  },
+  "main": "./dist/main.cjs",
+  "module": "./dist/main.mjs",
+  "types": "./dist/main.d.ts"
 }

@@ -1,4 +1,4 @@
-import {register} from '@public-ui/components';
+import {bootstrap} from '@public-ui/components';
 import {defineCustomElements} from '@public-ui/components/dist/loader';
 import {DEFAULT} from '@public-ui/theme-default';
 
@@ -7,7 +7,7 @@ const transformTagName = (tagName: string) => {
 };
 
 export async function registerKolibri() {
-    await register(DEFAULT, [], {
+    await bootstrap(DEFAULT, [], {
         transformTagName,
     }).then(() => {
         void defineCustomElements(window, {

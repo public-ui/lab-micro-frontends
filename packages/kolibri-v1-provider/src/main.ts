@@ -5,5 +5,3 @@ import {DEFAULT} from '@public-ui/theme-default';
 export async function registerKolibri() {
     await register(DEFAULT, defineCustomElements)
 }
-
-
