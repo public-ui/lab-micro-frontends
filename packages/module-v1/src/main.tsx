@@ -1,3 +1,3 @@
-import Module from "./Module.tsx";
+import Module from './Module.tsx';
 
-export { Module }
+export { Module };

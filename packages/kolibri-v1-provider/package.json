@@ -1,29 +1,30 @@
 {
-  "name": "kolibri-v1-provider",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && unbuild",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "@public-ui/components": "^1.7.17",
-    "typescript": "^5.2.2",
-    "unbuild": "^2.0.0",
-    "vite": "^5.1.0",
-    "@public-ui/theme-default": "^1.7.17"
-  },
-  "sideEffects": false,
-  "exports": {
-    ".": {
-      "types": "./dist/main.d.ts",
-      "import": "./dist/main.mjs",
-      "require": "./dist/main.cjs"
-    }
-  },
-  "main": "./dist/main.cjs",
-  "module": "./dist/main.mjs",
-  "types": "./dist/main.d.ts"
+	"name": "kolibri-v1-provider",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && unbuild",
+		"preview": "vite preview",
+		"format": "prettier --check ."
+	},
+	"devDependencies": {
+		"@public-ui/components": "^1.7.17",
+		"typescript": "^5.2.2",
+		"unbuild": "^2.0.0",
+		"vite": "^5.1.0",
+		"@public-ui/theme-default": "^1.7.17"
+	},
+	"sideEffects": false,
+	"exports": {
+		".": {
+			"types": "./dist/main.d.ts",
+			"import": "./dist/main.mjs",
+			"require": "./dist/main.cjs"
+		}
+	},
+	"main": "./dist/main.cjs",
+	"module": "./dist/main.mjs",
+	"types": "./dist/main.d.ts"
 }
