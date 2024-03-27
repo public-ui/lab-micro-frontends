@@ -41,3 +41,9 @@ You can run the application with the following commands:
 ```bash
 npm start
 ```
+
+Is everything installed and built correctly? You can run the application faster with the following command:
+
+```bash
+npx serve
+```
