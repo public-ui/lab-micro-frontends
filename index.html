@@ -5,16 +5,19 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/node_modules/@public-ui/themes/assets/codicons/codicon.css" />
+		<link rel="stylesheet" href="/node_modules/@public-ui/components/assets/codicons/codicon.css" />
 		<meta name="robots" content="noindex" />
 	</head>
 	<body>
+		<!-- Angular -->
 		<angular-app></angular-app>
-		<div id="react-app"></div>
-		<div id="vue-app"></div>
 		<script src="/node_modules/@public-ui/micro-frontend-angular/dist/angular/browser/polyfills.js" type="module"></script>
 		<script src="/node_modules/@public-ui/micro-frontend-angular/dist/angular/browser/main.js" type="module"></script>
+		<!-- React -->
+		<div id="react-app"></div>
 		<script src="/node_modules/@public-ui/micro-frontend-react/dist/assets/index.js" type="module"></script>
+		<!-- Vue -->
+		<div id="vue-app"></div>
 		<script src="/node_modules/@public-ui/micro-frontend-vue/dist/assets/index.js" type="module"></script>
 	</body>
 </html>
