@@ -12,11 +12,11 @@ Additionally, framework adapters can be easily configured, facilitating seamless
 
 This monorepo is an example implementation for a micro frontend architecture, comprised by the following packages:
 
-- **app**: Main application orchestrating various micro-frontends.
-- kolibri-v1-provider: Provides a regular build of KoliBri v1.x including the default theme.
-- kolibri-v2-provider: Offers a build of KoliBri v2.x with the default theme, featuring custom tag names suffixed with `-v2`.
-- module-v1: A small React module ("Micro frontend") dependent on KolBri v1.x.
-- module-v2: A small React module ("Micro frontend") dependent on KolBri v2.x.
+- `app`: Main application orchestrating various micro-frontends.
+- `kolibri-v1-provider`: Provides a regular build of KoliBri v1.x including the default theme.
+- `kolibri-v2-provider`: Offers a build of KoliBri v2.x with the default theme, featuring custom tag names suffixed with `-v2`.
+- `module-v1`: A small React module ("Micro frontend") dependent on KolBri v1.x.
+- `module-v2`: A small React module ("Micro frontend") dependent on KolBri v2.x.
 
 ### Configuration Highlights
 
@@ -30,4 +30,14 @@ pnpm i
 pnpm -r build
 cd packages/app
 pnpm dev
+```
+
+## Second scenario
+
+We have three micro frontends with Angular, React and Vue (in the `./frontends` folder). Each of them is using a different version of KoliBri. The main application is in the `root` folder.
+
+You can run the application with the following commands:
+
+```bash
+npm start
 ```
