@@ -11,7 +11,7 @@
 		"format": "prettier --check ."
 	},
 	"dependencies": {
-		"@public-ui/react": "^1.7.19",
+		"@public-ui/react": "^2.0.12",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},
