@@ -11,7 +11,7 @@
 		"update": "pnpm ncu:patch && pnpm ncu:minor && pnpm ncu:major"
 	},
 	"dependencies": {
-		"@public-ui/components": "2.0.10",
+		"@public-ui/components": "2.0.12",
 		"@public-ui/micro-frontend-angular": "0.0.0",
 		"@public-ui/micro-frontend-react": "0.0.0",
 		"@public-ui/micro-frontend-vue": "0.0.0"
