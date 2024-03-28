@@ -16,7 +16,7 @@
 		"@angular/platform-browser": "17.3.1",
 		"@angular/platform-browser-dynamic": "17.3.1",
 		"@angular/router": "17.3.1",
-		"@public-ui/angular-v17": "1.7.19",
+		"@public-ui/angular-v17": "2.0.12",
 		"@public-ui/components": "1.7.19",
 		"@public-ui/theme-default": "1.7.19",
 		"rxjs": "7.8.1",
