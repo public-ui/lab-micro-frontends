@@ -1,11 +1,25 @@
 {
-  "name": "kolibri-micro-frontends",
-  "private": true,
-  "license": "EUPL-1.2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+	"name": "@public-ui/macro-frontend",
+	"version": "0.0.0",
+	"private": true,
+	"license": "UNLICENSED",
+	"scripts": {
+		"ncu:major": "ncu && pnpm -r exec ncu",
+		"ncu:minor": "ncu -t minor -u && pnpm -r exec ncu -t minor -u",
+		"ncu:patch": "ncu -t patch -u && pnpm -r exec ncu -t patch -u",
+		"start": "npx pnpm i && pnpm -r build && serve ./",
+		"update": "pnpm ncu:patch && pnpm ncu:minor && pnpm ncu:major"
+	},
+	"dependencies": {
+		"@public-ui/components": "2.0.12",
+		"@public-ui/micro-frontend-angular": "0.0.0",
+		"@public-ui/micro-frontend-react": "0.0.0",
+		"@public-ui/micro-frontend-vue": "0.0.0"
+	},
+	"devDependencies": {
+		"npm-check-updates": "16.14.18",
+		"pnpm": "8.15.5",
+		"prettier": "3.2.5",
+		"serve": "14.2.1"
+	}
 }

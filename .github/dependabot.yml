@@ -1,0 +1,70 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    labels:
+      - dependabot
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /
+    labels:
+      - dependabot
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /frontends/angular/
+    labels:
+      - dependabot
+    schedule:
+      interval: daily
+  - package-ecosystem: npm
+    directory: /frontends/react/
+    labels:
+      - dependabot
+    schedule:
+      interval: daily
+  - package-ecosystem: npm
+    directory: /frontends/vue/
+    labels:
+      - dependabot
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/app/
+    labels:
+      - dependabot
+    schedule:
+      interval: daily
+  - package-ecosystem: npm
+    directory: /packages/kolibri-v1-provider/
+    labels:
+      - dependabot
+    schedule:
+      interval: daily
+  - package-ecosystem: npm
+    directory: /packages/kolibri-v2-provider/
+    labels:
+      - dependabot
+    schedule:
+      interval: daily
+  - package-ecosystem: npm
+    directory: /packages/module-v1/
+    labels:
+      - dependabot
+    schedule:
+      interval: daily
+  - package-ecosystem: npm
+    directory: /packages/module-v2/
+    labels:
+      - dependabot
+    schedule:
+      interval: daily
