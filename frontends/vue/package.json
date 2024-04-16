@@ -13,7 +13,7 @@
 		"@public-ui/components": "1.7.19",
 		"@public-ui/theme-default": "1.7.19",
 		"@public-ui/vue": "1.7.19",
-		"vue": "3.4.21"
+		"vue": "3.4.22"
 	},
 	"devDependencies": {
 		"@vitejs/plugin-vue": "5.0.4",
