@@ -10,7 +10,7 @@
 		"format": "prettier --check ."
 	},
 	"devDependencies": {
-		"@public-ui/components": "^1.7.19",
+		"@public-ui/components": "^2.0.14",
 		"typescript": "^5.4.3",
 		"unbuild": "^2.0.0",
 		"vite": "^5.2.6",
