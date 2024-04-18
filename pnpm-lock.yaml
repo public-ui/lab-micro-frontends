@@ -135,8 +135,8 @@ importers:
         specifier: 1.7.19
         version: 1.7.19(@public-ui/components@1.7.19)
       '@public-ui/vue':
-        specifier: 1.7.19
-        version: 1.7.19(@public-ui/components@1.7.19)(vue@3.4.21)
+        specifier: 2.0.14
+        version: 2.0.14(@public-ui/components@1.7.19)(vue@3.4.21)
       vue:
         specifier: 3.4.21
         version: 3.4.21(typescript@5.4.3)
@@ -2904,10 +2904,10 @@ packages:
       '@public-ui/components': 2.0.12
     dev: false
 
-  /@public-ui/vue@1.7.19(@public-ui/components@1.7.19)(vue@3.4.21):
-    resolution: {integrity: sha512-ltUbTi9K4U508WoRVY7qM2/k2z5X/wy6jvka6PWlgMa8agGU2ZVON73Csom/L0mFJ5Yfg8KFq9UhWQz8CDQX9g==}
+  /@public-ui/vue@2.0.14(@public-ui/components@1.7.19)(vue@3.4.21):
+    resolution: {integrity: sha512-zaSDUAGc4mLOoJHJADyCSJNT5Laq6ABtwW8ORxIG5t0jxaxO3NJ3sj9wTHoyI8c3j5511Fa1hF0odZOenwewtw==}
     peerDependencies:
-      '@public-ui/components': 1.7.19
+      '@public-ui/components': 2.0.14
       vue: '>=3'
     dependencies:
       '@public-ui/components': 1.7.19
