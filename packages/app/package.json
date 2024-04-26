@@ -16,11 +16,11 @@
 		"kolibri-v2-provider": "0.0.0",
 		"module-v1": "0.0.0",
 		"module-v2": "0.0.0",
-		"react": "^18.2.0",
+		"react": "^18.3.0",
 		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
-		"@types/react": "^18.2.73",
+		"@types/react": "^18.3.0",
 		"@types/react-dom": "^18.2.22",
 		"@typescript-eslint/eslint-plugin": "^6.21.0",
 		"@typescript-eslint/parser": "^6.21.0",
