@@ -12,7 +12,7 @@
 	"dependencies": {
 		"@public-ui/components": "1.7.19",
 		"@public-ui/theme-default": "1.7.19",
-		"@public-ui/vue": "1.7.19",
+		"@public-ui/vue": "2.0.15",
 		"vue": "3.4.21"
 	},
 	"devDependencies": {
