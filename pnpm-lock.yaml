@@ -67,8 +67,8 @@ importers:
         specifier: 1.7.19
         version: 1.7.19
       '@public-ui/theme-default':
-        specifier: 1.7.19
-        version: 1.7.19(@public-ui/components@1.7.19)
+        specifier: 2.1.0
+        version: 2.1.0(@public-ui/components@1.7.19)
       rxjs:
         specifier: 7.8.1
         version: 7.8.1
@@ -132,8 +132,8 @@ importers:
         specifier: 1.7.19
         version: 1.7.19
       '@public-ui/theme-default':
-        specifier: 1.7.19
-        version: 1.7.19(@public-ui/components@1.7.19)
+        specifier: 2.1.0
+        version: 2.1.0(@public-ui/components@1.7.19)
       '@public-ui/vue':
         specifier: 1.7.19
         version: 1.7.19(@public-ui/components@1.7.19)(vue@3.4.21)
@@ -215,8 +215,8 @@ importers:
         specifier: ^1.7.19
         version: 1.7.19
       '@public-ui/theme-default':
-        specifier: ^1.7.19
-        version: 1.7.19(@public-ui/components@1.7.19)
+        specifier: ^2.1.0
+        version: 2.1.0(@public-ui/components@1.7.19)
       typescript:
         specifier: ^5.4.3
         version: 5.4.3
@@ -233,8 +233,8 @@ importers:
         specifier: ^2.0.12
         version: 2.0.12
       '@public-ui/theme-default':
-        specifier: ^2.0.12
-        version: 2.0.12(@public-ui/components@2.0.12)
+        specifier: ^2.1.0
+        version: 2.1.0(@public-ui/components@2.0.12)
       adopted-style-sheets:
         specifier: ^1.1.4
         version: 1.1.4
@@ -2881,17 +2881,17 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
-  /@public-ui/theme-default@1.7.19(@public-ui/components@1.7.19):
-    resolution: {integrity: sha512-l+WSLi5VRuELBQ14nvCTSl+fOn0eHrqV/+fkl8RiXFJecPH+mYUY2lW4BMe3SOMpDwy9lDqDLn+ATzhlnvjIJg==}
+  /@public-ui/theme-default@2.1.0(@public-ui/components@1.7.19):
+    resolution: {integrity: sha512-Hq108WkYfUc6L/tv8+j7e4HFKVQ9jKDXeu2EFrepUPWu+G6cD31ycIAnPZ3OvFWrVG72h5uHQwThzkA1v61U6w==}
     peerDependencies:
-      '@public-ui/components': 1.7.19
+      '@public-ui/components': 2.1.0
     dependencies:
       '@public-ui/components': 1.7.19
 
-  /@public-ui/theme-default@2.0.12(@public-ui/components@2.0.12):
-    resolution: {integrity: sha512-6rm7UkeXemKzZ2C+ZmfkI+xFgaY5LhNUDqBuFrA5BSrseKNYlaD3BDvFR5aQfJ+KF4Vj/4BhSSaVJu5Q+ENDvw==}
+  /@public-ui/theme-default@2.1.0(@public-ui/components@2.0.12):
+    resolution: {integrity: sha512-Hq108WkYfUc6L/tv8+j7e4HFKVQ9jKDXeu2EFrepUPWu+G6cD31ycIAnPZ3OvFWrVG72h5uHQwThzkA1v61U6w==}
     peerDependencies:
-      '@public-ui/components': 2.0.12
+      '@public-ui/components': 2.1.0
     dependencies:
       '@public-ui/components': 2.0.12
     dev: true
