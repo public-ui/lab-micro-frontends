@@ -98,8 +98,8 @@ importers:
         specifier: 2.0.12
         version: 2.0.12
       '@public-ui/react':
-        specifier: 2.0.12
-        version: 2.0.12(@public-ui/components@2.0.12)(react-dom@18.2.0)(react@18.2.0)
+        specifier: 2.1.0
+        version: 2.1.0(@public-ui/components@2.0.12)(react-dom@18.2.0)(react@18.2.0)
       '@public-ui/themes':
         specifier: 2.0.12
         version: 2.0.12(@public-ui/components@2.0.12)
@@ -251,8 +251,8 @@ importers:
   packages/module-v1:
     dependencies:
       '@public-ui/react':
-        specifier: ^1.7.19
-        version: 1.7.19(@public-ui/components@1.7.19)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^2.1.0
+        version: 2.1.0(@public-ui/components@2.1.0)(react-dom@18.2.0)(react@18.2.0)
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -304,8 +304,8 @@ importers:
         version: 18.2.0(react@18.2.0)
     devDependencies:
       '@public-ui/react':
-        specifier: ^2.0.12
-        version: 2.0.12(@public-ui/components@2.0.12)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^2.1.0
+        version: 2.1.0(@public-ui/components@2.1.0)(react-dom@18.2.0)(react@18.2.0)
       '@types/react':
         specifier: ^18.2.73
         version: 18.2.73
@@ -2858,26 +2858,29 @@ packages:
   /@public-ui/components@2.0.12:
     resolution: {integrity: sha512-YNphX3FCUOqevqNX/C6z0bfvl4d2wFSUKNKCLEQjDFgnhyO17JRwU4cnkS3xYMXws7IJY7kfcHcE/zEzMtGXAg==}
 
-  /@public-ui/react@1.7.19(@public-ui/components@1.7.19)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-W3GFi8Uz4teS2jdJArcfGQ0ay9dXk8hg3Xx7xrzzz1Lmc8s0D28IqK1vCj5DMJfqzMHJhwy0KY6OsuhAsnxiag==}
+  /@public-ui/components@2.1.0:
+    resolution: {integrity: sha512-/+QkBp3zrMvu8Gd7jC0S8QJ+1QX350SwXOAtG4n6CpwPPsMl3/I9S+DpsxtLddn/Z5ggBLSTAR9vW8IMbJbWKA==}
+
+  /@public-ui/react@2.1.0(@public-ui/components@2.0.12)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-qrZN1p9OMXGOv+ueehCXeXJ3NGGjpB0mfERE9LoJlRKl+Y2oztx331V5ugwNgXRD2tNK3UVLjJG/Iwh4n8Pq8g==}
     peerDependencies:
-      '@public-ui/components': 1.7.19
+      '@public-ui/components': 2.1.0
       react: '>=16.14.0'
       react-dom: '>=16.14.0'
     dependencies:
-      '@public-ui/components': 1.7.19
+      '@public-ui/components': 2.0.12
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@public-ui/react@2.0.12(@public-ui/components@2.0.12)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-6HQG044bhHMWKcirpynk0rmcjGyVa0Opjmm9RQhs6Vqx5lce4Cg9w6C3vSA4GDfdmUYxrrUkmLIaEZ6yWqQh9A==}
+  /@public-ui/react@2.1.0(@public-ui/components@2.1.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-qrZN1p9OMXGOv+ueehCXeXJ3NGGjpB0mfERE9LoJlRKl+Y2oztx331V5ugwNgXRD2tNK3UVLjJG/Iwh4n8Pq8g==}
     peerDependencies:
-      '@public-ui/components': 2.0.12
+      '@public-ui/components': 2.1.0
       react: '>=16.14.0'
       react-dom: '>=16.14.0'
     dependencies:
-      '@public-ui/components': 2.0.12
+      '@public-ui/components': 2.1.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
