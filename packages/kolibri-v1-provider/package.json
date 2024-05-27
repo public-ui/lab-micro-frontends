@@ -14,7 +14,7 @@
 		"typescript": "^5.4.3",
 		"unbuild": "^2.0.0",
 		"vite": "^5.2.6",
-		"@public-ui/theme-default": "^1.7.19"
+		"@public-ui/theme-default": "^2.1.1"
 	},
 	"sideEffects": false,
 	"exports": {
