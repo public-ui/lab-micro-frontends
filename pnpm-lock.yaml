@@ -61,8 +61,8 @@ importers:
         specifier: 17.3.1
         version: 17.3.1(@angular/common@17.3.1)(@angular/core@17.3.1)(@angular/platform-browser@17.3.1)(rxjs@7.8.1)
       '@public-ui/angular-v17':
-        specifier: 1.7.19
-        version: 1.7.19(@angular/core@17.3.1)(@public-ui/components@1.7.19)
+        specifier: 2.1.1
+        version: 2.1.1(@angular/core@17.3.1)(@public-ui/components@1.7.19)
       '@public-ui/components':
         specifier: 1.7.19
         version: 1.7.19
@@ -2842,11 +2842,11 @@ packages:
       config-chain: 1.1.13
     dev: true
 
-  /@public-ui/angular-v17@1.7.19(@angular/core@17.3.1)(@public-ui/components@1.7.19):
-    resolution: {integrity: sha512-Wn406WaKD8yOqmjvzT0cZlGZ+1I5dJMymlJc4dpJ3W1vAxeN8WEXwluelwO/iWBEgfEL2no8OS4xuQV9Kh/7AA==}
+  /@public-ui/angular-v17@2.1.1(@angular/core@17.3.1)(@public-ui/components@1.7.19):
+    resolution: {integrity: sha512-b9QB5c4fIe7EF1Tmur2apW1DGqytNOkAvMan47ylCxoGc4aLIYrNBBVdgCMznn8ZOcQZau/5ietoKKUuXNRhzQ==}
     peerDependencies:
-      '@angular/core': 17.3.1
-      '@public-ui/components': 1.7.19
+      '@angular/core': 17.3.6
+      '@public-ui/components': 2.1.1
     dependencies:
       '@angular/core': 17.3.1(rxjs@7.8.1)(zone.js@0.14.4)
       '@public-ui/components': 1.7.19
