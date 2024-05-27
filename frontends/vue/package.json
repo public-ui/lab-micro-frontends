@@ -10,8 +10,8 @@
 		"start": "npm run dev"
 	},
 	"dependencies": {
-		"@public-ui/components": "1.7.19",
-		"@public-ui/theme-default": "1.7.19",
+		"@public-ui/components": "2.1.1",
+		"@public-ui/theme-default": "2.1.1",
 		"@public-ui/vue": "1.7.19",
 		"vue": "3.4.21"
 	},
