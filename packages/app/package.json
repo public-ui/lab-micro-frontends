@@ -12,24 +12,24 @@
 		"format": "prettier --check ."
 	},
 	"dependencies": {
-		"kolibri-v1-provider": "0.0.0",
-		"kolibri-v2-provider": "0.0.0",
-		"module-v1": "0.0.0",
-		"module-v2": "0.0.0",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"kolibri-v1-provider": "workspace:*",
+		"kolibri-v2-provider": "workspace:*",
+		"module-v1": "workspace:*",
+		"module-v2": "workspace:*",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
 	},
 	"devDependencies": {
-		"@types/react": "^18.2.73",
-		"@types/react-dom": "^18.2.22",
+		"@types/react": "^18.3.3",
+		"@types/react-dom": "^18.3.0",
 		"@typescript-eslint/eslint-plugin": "^6.21.0",
 		"@typescript-eslint/parser": "^6.21.0",
-		"@vitejs/plugin-react": "^4.2.1",
+		"@vitejs/plugin-react": "^4.3.0",
 		"eslint": "^8.57.0",
-		"eslint-plugin-react-hooks": "^4.6.0",
-		"eslint-plugin-react-refresh": "^0.4.6",
-		"prettier": "^3.2.5",
-		"typescript": "^5.4.3",
-		"vite": "^5.2.6"
+		"eslint-plugin-react-hooks": "^4.6.2",
+		"eslint-plugin-react-refresh": "^0.4.7",
+		"prettier": "^3.3.0",
+		"typescript": "^5.4.5",
+		"vite": "^5.2.12"
 	}
 }

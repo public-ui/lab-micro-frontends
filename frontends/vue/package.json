@@ -10,15 +10,15 @@
 		"start": "npm run dev"
 	},
 	"dependencies": {
-		"@public-ui/components": "1.7.19",
-		"@public-ui/theme-default": "1.7.19",
-		"@public-ui/vue": "1.7.19",
-		"vue": "3.4.21"
+		"@public-ui/components": "1.7.23",
+		"@public-ui/theme-default": "1.7.23",
+		"@public-ui/vue": "1.7.23",
+		"vue": "3.4.27"
 	},
 	"devDependencies": {
-		"@vitejs/plugin-vue": "5.0.4",
+		"@vitejs/plugin-vue": "5.0.5",
 		"@vue/tsconfig": "0.5.1",
-		"typescript": "5.4.3",
-		"vite": "5.2.6"
+		"typescript": "5.4.5",
+		"vite": "5.2.12"
 	}
 }
