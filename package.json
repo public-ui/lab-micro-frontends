@@ -10,16 +10,14 @@
 		"start": "npx pnpm i && pnpm -r build && serve ./",
 		"update": "pnpm ncu:patch && pnpm ncu:minor && pnpm ncu:major"
 	},
-	"dependencies": {
-		"@public-ui/components": "2.0.12",
-		"@public-ui/micro-frontend-angular": "0.0.0",
-		"@public-ui/micro-frontend-react": "0.0.0",
-		"@public-ui/micro-frontend-vue": "0.0.0"
-	},
 	"devDependencies": {
-		"npm-check-updates": "16.14.18",
-		"pnpm": "8.15.5",
-		"prettier": "3.2.5",
-		"serve": "14.2.1"
+		"npm-check-updates": "16.14.20",
+		"prettier": "3.3.0",
+		"serve": "14.2.3"
+	},
+	"engines": {
+		"node": "^20",
+		"npm": "^10",
+		"pnpm": "^9"
 	}
 }
