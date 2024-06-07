@@ -12,10 +12,10 @@
 		"format": "prettier --check ."
 	},
 	"dependencies": {
-		"kolibri-v1-provider": "0.0.0",
-		"kolibri-v2-provider": "0.0.0",
-		"module-v1": "0.0.0",
-		"module-v2": "0.0.0",
+		"kolibri-v1-provider": "workspace:*",
+		"kolibri-v2-provider": "workspace:*",
+		"module-v1": "workspace:*",
+		"module-v2": "workspace:*",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},
