@@ -10,11 +10,14 @@
 		"start": "npx pnpm i && pnpm -r build && serve ./",
 		"update": "pnpm ncu:patch && pnpm ncu:minor && pnpm ncu:major"
 	},
+	"engines": {
+		"pnpm": "^9"
+	},
 	"dependencies": {
 		"@public-ui/components": "2.0.12",
-		"@public-ui/micro-frontend-angular": "0.0.0",
-		"@public-ui/micro-frontend-react": "0.0.0",
-		"@public-ui/micro-frontend-vue": "0.0.0"
+		"@public-ui/micro-frontend-angular": "workspace:*",
+		"@public-ui/micro-frontend-react": "workspace:*",
+		"@public-ui/micro-frontend-vue": "workspace:*"
 	},
 	"devDependencies": {
 		"npm-check-updates": "16.14.18",
