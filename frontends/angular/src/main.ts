@@ -1,5 +1,5 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { setTagNameTransformer } from '@public-ui/angular-v17';
+import { setTagNameTransformer } from '@public-ui/angular-v18';
 import { bootstrap } from '@public-ui/components';
 import { defineCustomElements } from '@public-ui/components/dist/loader';
 import { DEFAULT } from '@public-ui/theme-default';
