@@ -212,11 +212,11 @@ importers:
   packages/kolibri-v1-provider:
     devDependencies:
       '@public-ui/components':
-        specifier: ^1.7.19
-        version: 1.7.19
+        specifier: 2.1.8
+        version: 2.1.8(adopted-style-sheets@1.1.4)
       '@public-ui/theme-default':
         specifier: ^1.7.19
-        version: 1.7.19(@public-ui/components@1.7.19)
+        version: 1.7.19(@public-ui/components@2.1.8(adopted-style-sheets@1.1.4))
       typescript:
         specifier: ^5.4.3
         version: 5.4.5
@@ -230,11 +230,11 @@ importers:
   packages/kolibri-v2-provider:
     devDependencies:
       '@public-ui/components':
-        specifier: ^2.0.12
-        version: 2.1.2
+        specifier: 2.1.8
+        version: 2.1.8(adopted-style-sheets@1.1.4)
       '@public-ui/theme-default':
         specifier: ^2.0.12
-        version: 2.1.2(@public-ui/components@2.1.2)
+        version: 2.1.2(@public-ui/components@2.1.8(adopted-style-sheets@1.1.4))
       adopted-style-sheets:
         specifier: ^1.1.4
         version: 1.1.4
@@ -252,7 +252,10 @@ importers:
     dependencies:
       '@public-ui/react':
         specifier: ^1.7.19
-        version: 1.7.24(@public-ui/components@2.1.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 1.7.24(@public-ui/components@2.1.8(adopted-style-sheets@1.1.4))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      kolibri-v1-provider:
+        specifier: workspace:*
+        version: link:../kolibri-v1-provider
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -296,6 +299,9 @@ importers:
 
   packages/module-v2:
     dependencies:
+      kolibri-v2-provider:
+        specifier: workspace:*
+        version: link:../kolibri-v2-provider
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -305,7 +311,7 @@ importers:
     devDependencies:
       '@public-ui/react':
         specifier: ^2.0.12
-        version: 2.0.12(@public-ui/components@2.1.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 2.0.12(@public-ui/components@2.1.8(adopted-style-sheets@1.1.4))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@types/react':
         specifier: ^18.2.73
         version: 18.2.73
@@ -1949,11 +1955,13 @@ packages:
   '@public-ui/components@2.0.12':
     resolution: {integrity: sha512-YNphX3FCUOqevqNX/C6z0bfvl4d2wFSUKNKCLEQjDFgnhyO17JRwU4cnkS3xYMXws7IJY7kfcHcE/zEzMtGXAg==}
 
-  '@public-ui/components@2.1.2':
-    resolution: {integrity: sha512-A5B8Inm1FnYOYep9FXJFzMfabXAhsvl09x9J0SZKH84I93wuHJ60glspF0Rs8mODYDADXtkXDgfkV7COK+r4fQ==}
-
   '@public-ui/components@2.1.3':
     resolution: {integrity: sha512-SpVEBPvPO7mLy0qIPHreql86KmtFJTsBBv9LKGru0JReCk5+t62CmKa7SI1XYat1s+tx/Tw1aE/IgCM7b7VY4g==}
+
+  '@public-ui/components@2.1.8':
+    resolution: {integrity: sha512-AMdkI+jRPbDaHIrJi6jA818zk80kxcY9kFajf7Fa231QNJNqGl1/NZqykYhd89/iRM1HnYMYIOSKplolKB7//Q==}
+    peerDependencies:
+      adopted-style-sheets: 1.1.5-rc.4
 
   '@public-ui/react@1.7.24':
     resolution: {integrity: sha512-1Wi9T+6NCfGyknG3+0Z9e5VJ/loKdQkiJCUrYKuQSAVNZDE6H5hpFtLSKoLVzgyFhQGgREv5DVd4V5QRWbQKKA==}
@@ -7593,13 +7601,15 @@ snapshots:
 
   '@public-ui/components@2.0.12': {}
 
-  '@public-ui/components@2.1.2': {}
-
   '@public-ui/components@2.1.3': {}
 
-  '@public-ui/react@1.7.24(@public-ui/components@2.1.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@public-ui/components@2.1.8(adopted-style-sheets@1.1.4)':
     dependencies:
-      '@public-ui/components': 2.1.3
+      adopted-style-sheets: 1.1.4
+
+  '@public-ui/react@1.7.24(@public-ui/components@2.1.8(adopted-style-sheets@1.1.4))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      '@public-ui/components': 2.1.8(adopted-style-sheets@1.1.4)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
@@ -7609,9 +7619,9 @@ snapshots:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
-  '@public-ui/react@2.0.12(@public-ui/components@2.1.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@public-ui/react@2.0.12(@public-ui/components@2.1.8(adopted-style-sheets@1.1.4))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
-      '@public-ui/components': 2.1.3
+      '@public-ui/components': 2.1.8(adopted-style-sheets@1.1.4)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
@@ -7619,9 +7629,13 @@ snapshots:
     dependencies:
       '@public-ui/components': 1.7.19
 
-  '@public-ui/theme-default@2.1.2(@public-ui/components@2.1.2)':
+  '@public-ui/theme-default@1.7.19(@public-ui/components@2.1.8(adopted-style-sheets@1.1.4))':
     dependencies:
-      '@public-ui/components': 2.1.2
+      '@public-ui/components': 2.1.8(adopted-style-sheets@1.1.4)
+
+  '@public-ui/theme-default@2.1.2(@public-ui/components@2.1.8(adopted-style-sheets@1.1.4))':
+    dependencies:
+      '@public-ui/components': 2.1.8(adopted-style-sheets@1.1.4)
 
   '@public-ui/theme-default@2.1.3(@public-ui/components@2.1.3)':
     dependencies:
