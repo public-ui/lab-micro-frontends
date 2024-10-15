@@ -24,9 +24,6 @@ importers:
       npm-check-updates:
         specifier: 16.14.18
         version: 16.14.18
-      pnpm:
-        specifier: 8.15.5
-        version: 8.15.5
       prettier:
         specifier: 3.2.5
         version: 3.2.5
@@ -4661,11 +4658,6 @@ packages:
 
   pkg-types@1.1.1:
     resolution: {integrity: sha512-ko14TjmDuQJ14zsotODv7dBlwxKhUKQEhuhmbqo1uCi9BB0Z2alo/wAXg6q1dTR5TyuqYyWhjtfe/Tsh+X28jQ==}
-
-  pnpm@8.15.5:
-    resolution: {integrity: sha512-sFGjLH5pWDO4SSbTspuMylclS1ifBknYmcbp0O22cLkex+KkNFm65zdZu1zmGcMmbxFr+THOItHvF1mn5Fqpbw==}
-    engines: {node: '>=16.14'}
-    hasBin: true
 
   postcss-calc@10.0.0:
     resolution: {integrity: sha512-OmjhudoNTP0QleZCwl1i6NeBwN+5MZbY5ersLZz69mjJiDVv/p57RjRuKDkHeDWr4T+S97wQfsqRTNoDHB2e3g==}
@@ -10722,8 +10714,6 @@ snapshots:
       confbox: 0.1.7
       mlly: 1.7.1
       pathe: 1.1.2
-
-  pnpm@8.15.5: {}
 
   postcss-calc@10.0.0(postcss@8.4.38):
     dependencies:
