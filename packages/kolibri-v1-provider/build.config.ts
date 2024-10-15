@@ -8,5 +8,8 @@ export default defineBuildConfig({
 	rollup: {
 		emitCJS: true,
 		inlineDependencies: true,
+		dts: {
+			respectExternal: false, // @see https://github.com/unjs/unbuild/issues/135#issuecomment-1426764411
+		},
 	},
 });
