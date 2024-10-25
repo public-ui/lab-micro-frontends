@@ -21,7 +21,6 @@
 	},
 	"devDependencies": {
 		"npm-check-updates": "16.14.18",
-		"pnpm": "8.15.5",
 		"prettier": "3.2.5",
 		"serve": "14.2.1"
 	}
