@@ -12,7 +12,8 @@
 	},
 	"dependencies": {
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"react-dom": "^18.2.0",
+		"kolibri-v2-provider": "workspace:*"
 	},
 	"devDependencies": {
 		"@public-ui/react": "^2.0.12",
