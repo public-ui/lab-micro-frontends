@@ -4,10 +4,12 @@ import App from './App.tsx';
 import './index.css';
 import { registerKolibri as registerKolibriV1 } from 'kolibri-v1-provider';
 import { registerKolibri as registerKolibriV2 } from 'kolibri-v2-provider';
+import { registerKolibri as registerKolibriV3 } from 'kolibri-v3-provider';
 
 (async () => {
 	await registerKolibriV1();
 	await registerKolibriV2();
+	await registerKolibriV3();
 
 	ReactDOM.createRoot(document.getElementById('root')!).render(
 		<React.StrictMode>

@@ -1,27 +1,21 @@
 {
-	"name": "app",
+	"name": "module-v3",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "tsc && vite build",
-		"build:deps": "pnpm --filter app^... build",
+		"build": "tsc && unbuild",
 		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview",
 		"format": "prettier --check ."
 	},
 	"dependencies": {
-		"kolibri-v1-provider": "workspace:*",
-		"kolibri-v2-provider": "workspace:*",
-		"kolibri-v3-provider": "workspace:*",
-		"module-v1": "workspace:*",
-		"module-v2": "workspace:*",
-		"module-v3": "workspace:*",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
+		"@public-ui/react": "^2.2.12",
 		"@types/react": "^18.2.73",
 		"@types/react-dom": "^18.2.22",
 		"@typescript-eslint/eslint-plugin": "^6.21.0",
@@ -30,8 +24,19 @@
 		"eslint": "^8.57.0",
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"eslint-plugin-react-refresh": "^0.4.6",
-		"prettier": "^3.2.5",
 		"typescript": "^5.4.3",
+		"unbuild": "^2.0.0",
 		"vite": "^5.2.6"
-	}
+	},
+	"sideEffects": false,
+	"exports": {
+		".": {
+			"types": "./dist/main.d.ts",
+			"import": "./dist/main.mjs",
+			"require": "./dist/main.cjs"
+		}
+	},
+	"main": "./dist/main.cjs",
+	"module": "./dist/main.mjs",
+	"types": "./dist/main.d.ts"
 }
