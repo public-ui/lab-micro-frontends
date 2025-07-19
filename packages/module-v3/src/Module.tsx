@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { KolButton, KolLinkGroup } from '@public-ui/react';
+import { KolButton, KolLink } from '@public-ui/react';
 
 export default () => {
 	const [counter, setCounter] = useState(0);
@@ -11,7 +11,7 @@ export default () => {
 
 			<KolButton _label={`KolButton ${counter}`} _on={{ onClick: () => setCounter(counter + 1) }} />
 
-			<KolLinkGroup _label="Link Group" _links={[{ _label: 'One link', _href: 'https://example.com' }]}></KolLinkGroup>
+			<KolLink _label="Single Link" _href={'https://example.com'} />
 		</div>
 	);
 };

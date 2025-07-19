@@ -374,8 +374,8 @@ importers:
         version: 18.2.0(react@18.2.0)
     devDependencies:
       '@public-ui/react':
-        specifier: ^2.2.12
-        version: 2.2.12(@public-ui/components@3.0.1(adopted-style-sheets@1.1.9-rc.20))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: ^3.0.1
+        version: 3.0.1(@public-ui/components@3.0.1(adopted-style-sheets@1.1.9-rc.20))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@types/react':
         specifier: ^18.2.73
         version: 18.2.73
@@ -2065,6 +2065,13 @@ packages:
     resolution: {integrity: sha512-BJw4wCbt3J9KyWH4QEaX2xiU0JqYjYxmI61dpoN0Y8Mz4WP39NSJcSRpIW0P1p6QgLYzuXlm9ployO+1TDv8Mw==}
     peerDependencies:
       '@public-ui/components': 2.2.12
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+
+  '@public-ui/react@3.0.1':
+    resolution: {integrity: sha512-TKZW5RHAhkokc4RxZstFylvmAOPOSr16xCVLl6vZ87uo1G0HKPMllTWj90IDm4BmpS/4sn83H4ytwzIetsuUbg==}
+    peerDependencies:
+      '@public-ui/components': 3.0.1
       react: '>=16.14.0'
       react-dom: '>=16.14.0'
 
@@ -7829,6 +7836,12 @@ snapshots:
       react-dom: 18.2.0(react@18.2.0)
 
   '@public-ui/react@2.2.12(@public-ui/components@3.0.1(adopted-style-sheets@1.1.9-rc.20))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      '@public-ui/components': 3.0.1(adopted-style-sheets@1.1.9-rc.20)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+
+  '@public-ui/react@3.0.1(@public-ui/components@3.0.1(adopted-style-sheets@1.1.9-rc.20))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
       '@public-ui/components': 3.0.1(adopted-style-sheets@1.1.9-rc.20)
       react: 18.2.0
