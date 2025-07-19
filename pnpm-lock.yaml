@@ -209,11 +209,11 @@ importers:
   packages/kolibri-v1-provider:
     devDependencies:
       '@public-ui/components':
-        specifier: ^1.7.19
-        version: 1.7.19
+        specifier: ^1.7.29
+        version: 1.7.29(@public-ui/schema@1.7.29(adopted-style-sheets@1.1.4))(adopted-style-sheets@1.1.4)
       '@public-ui/theme-default':
-        specifier: ^1.7.19
-        version: 1.7.19(@public-ui/components@1.7.19)
+        specifier: ^1.7.29
+        version: 1.7.29(@public-ui/components@1.7.29(@public-ui/schema@1.7.29(adopted-style-sheets@1.1.4))(adopted-style-sheets@1.1.4))
       typescript:
         specifier: ^5.4.3
         version: 5.4.5
@@ -227,11 +227,11 @@ importers:
   packages/kolibri-v2-provider:
     devDependencies:
       '@public-ui/components':
-        specifier: ^2.0.12
-        version: 2.1.2
+        specifier: ^2.2.12
+        version: 2.2.12(adopted-style-sheets@1.1.4)
       '@public-ui/theme-default':
-        specifier: ^2.0.12
-        version: 2.1.2(@public-ui/components@2.1.2)
+        specifier: ^2.2.12
+        version: 2.2.12(@public-ui/components@2.2.12(adopted-style-sheets@1.1.4))
       adopted-style-sheets:
         specifier: ^1.1.4
         version: 1.1.4
@@ -248,8 +248,8 @@ importers:
   packages/module-v1:
     dependencies:
       '@public-ui/react':
-        specifier: ^1.7.19
-        version: 1.7.24(@public-ui/components@2.1.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: ^1.7.29
+        version: 1.7.29(@public-ui/components@2.2.12(adopted-style-sheets@1.1.4))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -301,8 +301,8 @@ importers:
         version: 18.2.0(react@18.2.0)
     devDependencies:
       '@public-ui/react':
-        specifier: ^2.0.12
-        version: 2.0.12(@public-ui/components@2.1.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: ^2.2.12
+        version: 2.2.12(@public-ui/components@2.2.12(adopted-style-sheets@1.1.4))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@types/react':
         specifier: ^18.2.73
         version: 18.2.73
@@ -1706,6 +1706,15 @@ packages:
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
+  '@floating-ui/core@1.7.2':
+    resolution: {integrity: sha512-wNB5ooIKHQc+Kui96jE/n69rHFWAVoxn5CAzL1Xdd8FG03cgY3MLO+GF9U3W737fYDSgPWA6MReKhBQBop6Pcw==}
+
+  '@floating-ui/dom@1.7.1':
+    resolution: {integrity: sha512-cwsmW/zyw5ltYTUeeYJ60CnQuPqmGwuGVhG9w0PRaRKkAyi38BT5CKrpIbb+jtahSwUl04cWzSx9ZOIxeS6RsQ==}
+
+  '@floating-ui/utils@0.2.10':
+    resolution: {integrity: sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ==}
+
   '@gar/promisify@1.1.3':
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
 
@@ -1943,19 +1952,27 @@ packages:
   '@public-ui/components@1.7.19':
     resolution: {integrity: sha512-gdt3YYIP3K1fMsi9qfLvOx4T28+6ZZ1VZxKWElg59+feuuLqEmBoPsbPy+j0Ul/g58lvmzgBjm8FS4P2Dn7bUQ==}
 
+  '@public-ui/components@1.7.29':
+    resolution: {integrity: sha512-vhX6HD3UmhMy/En7q03KWag8fuRFYd/zD2TfM5iT2BU/8wyZJ6C1lDZEy4BWo1GYyKZNr1ICUkNMtDJn3mJgxg==}
+    peerDependencies:
+      '@public-ui/schema': 1.7.29
+      adopted-style-sheets: 1.1.5-rc.4
+
   '@public-ui/components@2.0.12':
     resolution: {integrity: sha512-YNphX3FCUOqevqNX/C6z0bfvl4d2wFSUKNKCLEQjDFgnhyO17JRwU4cnkS3xYMXws7IJY7kfcHcE/zEzMtGXAg==}
-
-  '@public-ui/components@2.1.2':
-    resolution: {integrity: sha512-A5B8Inm1FnYOYep9FXJFzMfabXAhsvl09x9J0SZKH84I93wuHJ60glspF0Rs8mODYDADXtkXDgfkV7COK+r4fQ==}
 
   '@public-ui/components@2.1.3':
     resolution: {integrity: sha512-SpVEBPvPO7mLy0qIPHreql86KmtFJTsBBv9LKGru0JReCk5+t62CmKa7SI1XYat1s+tx/Tw1aE/IgCM7b7VY4g==}
 
-  '@public-ui/react@1.7.24':
-    resolution: {integrity: sha512-1Wi9T+6NCfGyknG3+0Z9e5VJ/loKdQkiJCUrYKuQSAVNZDE6H5hpFtLSKoLVzgyFhQGgREv5DVd4V5QRWbQKKA==}
+  '@public-ui/components@2.2.12':
+    resolution: {integrity: sha512-MM9Q5tdslJAfvkgyBiPRKsV9gJ+i01O54Wgs1DLz4lpBx4ixrZdOkRzdHPZi4TkjsJgOX5fURbE0bK7QlE1Bcg==}
     peerDependencies:
-      '@public-ui/components': 1.7.24
+      adopted-style-sheets: 1.1.9-rc.19
+
+  '@public-ui/react@1.7.29':
+    resolution: {integrity: sha512-hVwAG4mHJ1NU6YCsTy7+FtL/lfh1IURJtYplBHWackSMq9L9Wd9e1b5g6sNUMGMkr++RgrYQP/6DFYMluX1kiw==}
+    peerDependencies:
+      '@public-ui/components': 1.7.29
       react: '>=16.14.0'
       react-dom: '>=16.14.0'
 
@@ -1966,20 +1983,38 @@ packages:
       react: '>=16.14.0'
       react-dom: '>=16.14.0'
 
+  '@public-ui/react@2.2.12':
+    resolution: {integrity: sha512-BJw4wCbt3J9KyWH4QEaX2xiU0JqYjYxmI61dpoN0Y8Mz4WP39NSJcSRpIW0P1p6QgLYzuXlm9ployO+1TDv8Mw==}
+    peerDependencies:
+      '@public-ui/components': 2.2.12
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+
+  '@public-ui/schema@1.7.29':
+    resolution: {integrity: sha512-LxzjQQsmP8EMN/8aEinrEuLVk+nS0vzx3YCMfOPswEgm88w1XAcprxSQ3eoAZKFogKIC/a9dgRiTHSCxDjIrsg==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+    peerDependencies:
+      adopted-style-sheets: 1.1.5-rc.4
+
   '@public-ui/theme-default@1.7.19':
     resolution: {integrity: sha512-l+WSLi5VRuELBQ14nvCTSl+fOn0eHrqV/+fkl8RiXFJecPH+mYUY2lW4BMe3SOMpDwy9lDqDLn+ATzhlnvjIJg==}
     peerDependencies:
       '@public-ui/components': 1.7.19
 
-  '@public-ui/theme-default@2.1.2':
-    resolution: {integrity: sha512-V9ivcyhG4mp6NO04utzDC1GAHB9Zu9xChpI97spJTCdX66ijU3scDgKj2+a12aijrqC/tkqiB6JjnhGCbk5ZFw==}
+  '@public-ui/theme-default@1.7.29':
+    resolution: {integrity: sha512-OEleTrVHpQUwL9+vmkI6VutjigttgWwFFxpGUVSDSRjPOt97u1DOgIc+bDe6G/5RaRRiJG6W4PgfgzLL/5+zIg==}
     peerDependencies:
-      '@public-ui/components': 2.1.2
+      '@public-ui/components': 1.7.29
 
   '@public-ui/theme-default@2.1.3':
     resolution: {integrity: sha512-5ELqcqGcoZeUyrxaKQwUpNbLQBfTIpQGn7M/f7UeUClbiMQOACR8IHzeMPSHwoSH8r5zBxC0ClZN6PGq7QGeNg==}
     peerDependencies:
       '@public-ui/components': 2.1.3
+
+  '@public-ui/theme-default@2.2.12':
+    resolution: {integrity: sha512-7xsUHEZCMgkEaEpsox+BA2K76T4trLix8NAz0EaheivjM5gSW9DAnYBRfC4/NVmkEXJYd6i6nCZA7VL9aMGTNg==}
+    peerDependencies:
+      '@public-ui/components': 2.2.12
 
   '@public-ui/themes@2.0.12':
     resolution: {integrity: sha512-QN35HX0yGCZ5zebD/tH33PspXOhxAV1CD88vGKxVz0eXpUAWTPLaABHHYhGvsfCx8W6736IL+3hjvlCo8CIq6A==}
@@ -2851,6 +2886,10 @@ packages:
     resolution: {integrity: sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==}
     engines: {node: '>=0.8'}
 
+  clsx@2.1.1:
+    resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
+    engines: {node: '>=6'}
+
   color-convert@1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
 
@@ -2858,11 +2897,28 @@ packages:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
     engines: {node: '>=7.0.0'}
 
+  color-convert@3.1.0:
+    resolution: {integrity: sha512-TVoqAq8ZDIpK5lsQY874DDnu65CSsc9vzq0wLpNQ6UMBq81GSZocVazPiBbYGzngzBOIRahpkTzCLVe2at4MfA==}
+    engines: {node: '>=14.6'}
+
   color-name@1.1.3:
     resolution: {integrity: sha512-72fSenhMw2HZMTVHeCA9KCmpEIbzWiQsjN+BHcBbS9vr1mtt+vJjPdksIBNUmKAW8TFUDPJK5SUU3QhE9NEXDw==}
 
   color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+
+  color-name@2.0.0:
+    resolution: {integrity: sha512-SbtvAMWvASO5TE2QP07jHBMXKafgdZz8Vrsrn96fiL+O92/FN/PLARzUW5sKt013fjAprK2d2iCn2hk2Xb5oow==}
+    engines: {node: '>=12.20'}
+
+  color-parse@1.4.3:
+    resolution: {integrity: sha512-BADfVl/FHkQkyo8sRBwMYBqemqsgnu7JZAwUgvBvuwwuNUZAhSvLTbsEErS5bQXzOjDR0dWzJ4vXN2Q+QoPx0A==}
+
+  color-rgba@2.4.0:
+    resolution: {integrity: sha512-Nti4qbzr/z2LbUWySr7H9dk3Rl7gZt7ihHAxlgT4Ho90EXWkjtkL1avTleu9yeGuqrt/chxTB6GKK8nZZ6V0+Q==}
+
+  color-space@2.3.2:
+    resolution: {integrity: sha512-BcKnbOEsOarCwyoLstcoEztwT0IJxqqQkNwDuA3a65sICvvHL2yoeV13psoDFh5IuiOMnIOKdQDwB4Mk3BypiA==}
 
   color-support@1.1.3:
     resolution: {integrity: sha512-qiBjkpbMLO/HL68y+lh4q0/O1MZFj2RX6X/KmMa3+gJD3z+WwI1ZzDHysvqHGS3mP6mznPckpXmw1nI9cJjyRg==}
@@ -3293,6 +3349,10 @@ packages:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     hasBin: true
+
+  esm@3.2.25:
+    resolution: {integrity: sha512-U1suiZ2oDVWv4zPO56S0NcR5QriEahGtdN2OR6FiOG4WJvcjBVFB0qI4+eKoWFH483PKGuLuu6V8Z4T5g63UVA==}
+    engines: {node: '>=6'}
 
   espree@9.6.1:
     resolution: {integrity: sha512-oruZaFkjorTpF32kDSI5/75ViwGeZginGGy2NoOSg3Q9bnwlnmDm4HLnkl0RE3n+njDXR037aY1+x58Z/zFdwQ==}
@@ -4043,6 +4103,9 @@ packages:
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
+  linkify-it@5.0.0:
+    resolution: {integrity: sha512-5aHCbzQRADcdP+ATqnDuhhJ/MRIqDkZX5pyjFHRRysS8vZ5AbqGEoFIb6pYHPZ+L/OC2Lc+xT8uHVVR5CAK/wQ==}
+
   lmdb@3.0.8:
     resolution: {integrity: sha512-9rp8JT4jPhCRJUL7vRARa2N06OLSYzLwQsEkhC6Qu5XbcLyM/XBLMzDlgS/K7l7c5CdURLdDk9uE+hPFIogHTQ==}
     hasBin: true
@@ -4128,11 +4191,18 @@ packages:
     resolution: {integrity: sha512-cKTUFc/rbKUd/9meOvgrpJ2WrNzymt6jfRDdwg5UCnVzv9dTpEj9JS5m3wtziXVCjluIXyL8pcaukYqezIzZQA==}
     engines: {node: ^16.14.0 || >=18.0.0}
 
+  markdown-it@14.1.0:
+    resolution: {integrity: sha512-a54IwgWPaeBCAAsv13YgmALOF1elABB08FxO9i+r4VFk5Vl4pKokRPeX8u5TCgSsPi6ec1otfLjdOpVcgbpshg==}
+    hasBin: true
+
   mdn-data@2.0.28:
     resolution: {integrity: sha512-aylIc7Z9y4yzHYAJNuESG3hfhC+0Ibp/MAMiaOZgNv4pmEdFyfZhhhny4MNiAfWdBQ1RQ2mfDWmM1x8SvGyp8g==}
 
   mdn-data@2.0.30:
     resolution: {integrity: sha512-GaqWWShW4kv/G9IEucWScBx9G1/vsFZZJUO+tD26M8J8z3Kw5RDQjaoZe03YAClgeS/SWPOcb4nkFBTEi5DUEA==}
+
+  mdurl@2.0.0:
+    resolution: {integrity: sha512-Lf+9+2r+Tdp5wXDXC4PcIBjTDtq4UKjCPMQhKIuzpJNW0b96kVqSwW0bT7FhRSfmAiFYgP+SCRvdrDozfh0U5w==}
 
   media-typer@0.3.0:
     resolution: {integrity: sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==}
@@ -4932,6 +5002,10 @@ packages:
   prr@1.0.1:
     resolution: {integrity: sha512-yPw4Sng1gWghHQWj0B3ZggWUm4qVbPwPFcRG8KyxiU7J2OHFSoEHKS+EZ3fv5l1t9CyCiop6l/ZYeWbrgoQejw==}
 
+  punycode.js@2.3.1:
+    resolution: {integrity: sha512-uxFIHU0YlHYhDQtV4R9J6a52SLx28BCjT+4ieh7IGbgwVJWO+km431c4yRlREUAsAmt/uMjQUyQHNEPf0M39CA==}
+    engines: {node: '>=6'}
+
   punycode@1.4.1:
     resolution: {integrity: sha512-jmYNElW7yvO7TV33CjSmvSiE2yco3bV2czu/OzDKdMNVZQWfxCblURLhf+47syQRBntjfLdd/H0egrzIG+oaFQ==}
 
@@ -4946,6 +5020,12 @@ packages:
   qs@6.11.0:
     resolution: {integrity: sha512-MvjoMCJwEarSbUYk5O+nmoSzSutSsTwF85zcHPQ9OrlFoZOYIjaqBAJIqIXjptyD5vThxGq52Xu/MaJzRkIk4Q==}
     engines: {node: '>=0.6'}
+
+  query-selector-all-shadow-root@0.0.3:
+    resolution: {integrity: sha512-J7TPo7c+Ut6Wl7Ujk/dToR15eqwu84vJAazgzkcUxCeCtoxbDJPsFs9mBaYoSUfS0ZN3xspLDGBajr0G8d2QZQ==}
+
+  query-selector-shadow-root@0.0.3:
+    resolution: {integrity: sha512-QXU2+N4fR2g8gqjGRjwg7x2oCiudc+nUAbaOqLtXvAlF7nQ32sRlkgFdpHLwzfeBvyvBgJzN/QFCogGCSjB/bQ==}
 
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
@@ -5051,6 +5131,9 @@ packages:
     resolution: {integrity: sha512-dQUtn90WanSNl+7mQKcXAgZxvUe7Z0SqXlgzv0za4LwiUhyzBC58yQO3liFoUgu8GiJVInAhJjkj1N0EtQ5nkQ==}
     hasBin: true
 
+  relative-luminance@2.0.1:
+    resolution: {integrity: sha512-wFuITNthJilFPwkK7gNJcULxXBcfFZvZORsvdvxeOdO44wCeZnuQkf3nFFzOR/dpJNxYsdRZJLsepWbyKhnMww==}
+
   remote-git-tags@3.0.0:
     resolution: {integrity: sha512-C9hAO4eoEsX+OXA4rla66pXZQ+TLQ8T9dttgQj18yuKlPMTVkIkdYXvlMC55IuUsIkV6DpmQYi10JKFLaU+l7w==}
     engines: {node: '>=8'}
@@ -5100,6 +5183,9 @@ packages:
   reusify@1.0.4:
     resolution: {integrity: sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
+
+  rgba-convert@0.3.0:
+    resolution: {integrity: sha512-l9MrAHIBevtg2NriZbCKVEZP/1eEfA+69r65gPXopzjivEadBRjFFSH74Lvobiot0nJa8xZSko/3xGSXNCaHAA==}
 
   rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
@@ -5585,6 +5671,9 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
+  uc.micro@2.1.0:
+    resolution: {integrity: sha512-ARDJmphmdvUk6Glw7y9DQ2bFkKBHwQHLi2lsaH6PPmz/Ka9sFOBsBluozhDltWmnv9u/cF6Rt87znRTPV+yp/A==}
+
   ufo@1.5.3:
     resolution: {integrity: sha512-Y7HYmWaFwPUmkoQCUIAYpKqkOf+SbVj/2fJJZ4RJMCfZp0rTGwRbzQD+HghfnhKOjL9E01okqz+ncJskGYfBNw==}
 
@@ -5768,6 +5857,9 @@ packages:
 
   wbuf@1.7.3:
     resolution: {integrity: sha512-O84QOnr0icsbFGLS0O3bI5FswxzRr8/gHwWkDlQFskhSPryQXvrTMxjxGP4+iWYoauLoBvfDpkrOauZ+0iZpDA==}
+
+  wcag-contrast@3.0.0:
+    resolution: {integrity: sha512-RWbpg/S7FOXDCwqC2oFhN/vh8dHzj0OS6dpyOSDHyQFSmqmR+lAUStV/ziTT1GzDqL9wol+nZQB4vCi5yEak+w==}
 
   wcwidth@1.0.1:
     resolution: {integrity: sha512-XHPEwS0q6TaxcvG85+8EYkbiCux2XtWG2mkc47Ng2A77BQu9+DqIOJldST4HgPkuea7dvKSj5VgX3P1d4rW8Tg==}
@@ -7334,6 +7426,17 @@ snapshots:
 
   '@eslint/js@8.57.0': {}
 
+  '@floating-ui/core@1.7.2':
+    dependencies:
+      '@floating-ui/utils': 0.2.10
+
+  '@floating-ui/dom@1.7.1':
+    dependencies:
+      '@floating-ui/core': 1.7.2
+      '@floating-ui/utils': 0.2.10
+
+  '@floating-ui/utils@0.2.10': {}
+
   '@gar/promisify@1.1.3': {}
 
   '@humanwhocodes/config-array@0.11.14':
@@ -7583,15 +7686,31 @@ snapshots:
 
   '@public-ui/components@1.7.19': {}
 
-  '@public-ui/components@2.0.12': {}
+  '@public-ui/components@1.7.29(@public-ui/schema@1.7.29(adopted-style-sheets@1.1.4))(adopted-style-sheets@1.1.4)':
+    dependencies:
+      '@public-ui/schema': 1.7.29(adopted-style-sheets@1.1.4)
+      adopted-style-sheets: 1.1.4
 
-  '@public-ui/components@2.1.2': {}
+  '@public-ui/components@2.0.12': {}
 
   '@public-ui/components@2.1.3': {}
 
-  '@public-ui/react@1.7.24(@public-ui/components@2.1.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@public-ui/components@2.2.12(adopted-style-sheets@1.1.4)':
     dependencies:
-      '@public-ui/components': 2.1.3
+      '@floating-ui/dom': 1.7.1
+      adopted-style-sheets: 1.1.4
+      clsx: 2.1.1
+      color-convert: 3.1.0
+      color-rgba: 2.4.0
+      markdown-it: 14.1.0
+      query-selector-all-shadow-root: 0.0.3
+      query-selector-shadow-root: 0.0.3
+      rgba-convert: 0.3.0
+      wcag-contrast: 3.0.0
+
+  '@public-ui/react@1.7.29(@public-ui/components@2.2.12(adopted-style-sheets@1.1.4))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      '@public-ui/components': 2.2.12(adopted-style-sheets@1.1.4)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
@@ -7601,23 +7720,31 @@ snapshots:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
-  '@public-ui/react@2.0.12(@public-ui/components@2.1.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@public-ui/react@2.2.12(@public-ui/components@2.2.12(adopted-style-sheets@1.1.4))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
-      '@public-ui/components': 2.1.3
+      '@public-ui/components': 2.2.12(adopted-style-sheets@1.1.4)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+
+  '@public-ui/schema@1.7.29(adopted-style-sheets@1.1.4)':
+    dependencies:
+      adopted-style-sheets: 1.1.4
 
   '@public-ui/theme-default@1.7.19(@public-ui/components@1.7.19)':
     dependencies:
       '@public-ui/components': 1.7.19
 
-  '@public-ui/theme-default@2.1.2(@public-ui/components@2.1.2)':
+  '@public-ui/theme-default@1.7.29(@public-ui/components@1.7.29(@public-ui/schema@1.7.29(adopted-style-sheets@1.1.4))(adopted-style-sheets@1.1.4))':
     dependencies:
-      '@public-ui/components': 2.1.2
+      '@public-ui/components': 1.7.29(@public-ui/schema@1.7.29(adopted-style-sheets@1.1.4))(adopted-style-sheets@1.1.4)
 
   '@public-ui/theme-default@2.1.3(@public-ui/components@2.1.3)':
     dependencies:
       '@public-ui/components': 2.1.3
+
+  '@public-ui/theme-default@2.2.12(@public-ui/components@2.2.12(adopted-style-sheets@1.1.4))':
+    dependencies:
+      '@public-ui/components': 2.2.12(adopted-style-sheets@1.1.4)
 
   '@public-ui/themes@2.0.12(@public-ui/components@2.0.12)':
     dependencies:
@@ -8639,6 +8766,8 @@ snapshots:
 
   clone@1.0.4: {}
 
+  clsx@2.1.1: {}
+
   color-convert@1.9.3:
     dependencies:
       color-name: 1.1.3
@@ -8647,9 +8776,26 @@ snapshots:
     dependencies:
       color-name: 1.1.4
 
+  color-convert@3.1.0:
+    dependencies:
+      color-name: 2.0.0
+
   color-name@1.1.3: {}
 
   color-name@1.1.4: {}
+
+  color-name@2.0.0: {}
+
+  color-parse@1.4.3:
+    dependencies:
+      color-name: 1.1.4
+
+  color-rgba@2.4.0:
+    dependencies:
+      color-parse: 1.4.3
+      color-space: 2.3.2
+
+  color-space@2.3.2: {}
 
   color-support@1.1.3: {}
 
@@ -9178,6 +9324,8 @@ snapshots:
       text-table: 0.2.0
     transitivePeerDependencies:
       - supports-color
+
+  esm@3.2.25: {}
 
   espree@9.6.1:
     dependencies:
@@ -9946,6 +10094,10 @@ snapshots:
 
   lines-and-columns@1.2.4: {}
 
+  linkify-it@5.0.0:
+    dependencies:
+      uc.micro: 2.1.0
+
   lmdb@3.0.8:
     dependencies:
       msgpackr: 1.10.2
@@ -10079,9 +10231,20 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  markdown-it@14.1.0:
+    dependencies:
+      argparse: 2.0.1
+      entities: 4.5.0
+      linkify-it: 5.0.0
+      mdurl: 2.0.0
+      punycode.js: 2.3.1
+      uc.micro: 2.1.0
+
   mdn-data@2.0.28: {}
 
   mdn-data@2.0.30: {}
+
+  mdurl@2.0.0: {}
 
   media-typer@0.3.0: {}
 
@@ -10952,6 +11115,8 @@ snapshots:
   prr@1.0.1:
     optional: true
 
+  punycode.js@2.3.1: {}
+
   punycode@1.4.1: {}
 
   punycode@2.3.1: {}
@@ -10963,6 +11128,10 @@ snapshots:
   qs@6.11.0:
     dependencies:
       side-channel: 1.0.6
+
+  query-selector-all-shadow-root@0.0.3: {}
+
+  query-selector-shadow-root@0.0.3: {}
 
   queue-microtask@1.2.3: {}
 
@@ -11089,6 +11258,10 @@ snapshots:
     dependencies:
       jsesc: 0.5.0
 
+  relative-luminance@2.0.1:
+    dependencies:
+      esm: 3.2.25
+
   remote-git-tags@3.0.0: {}
 
   require-directory@2.1.1: {}
@@ -11129,6 +11302,8 @@ snapshots:
   retry@0.13.1: {}
 
   reusify@1.0.4: {}
+
+  rgba-convert@0.3.0: {}
 
   rimraf@3.0.2:
     dependencies:
@@ -11655,6 +11830,8 @@ snapshots:
 
   typescript@5.4.5: {}
 
+  uc.micro@2.1.0: {}
+
   ufo@1.5.3: {}
 
   unbuild@2.0.0(sass@1.77.2)(typescript@5.4.5):
@@ -11834,6 +12011,10 @@ snapshots:
   wbuf@1.7.3:
     dependencies:
       minimalistic-assert: 1.0.1
+
+  wcag-contrast@3.0.0:
+    dependencies:
+      relative-luminance: 2.0.1
 
   wcwidth@1.0.1:
     dependencies:
