@@ -1,5 +1,5 @@
 {
-	"name": "module-v1",
+	"name": "module-v3",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -11,11 +11,11 @@
 		"format": "prettier --check ."
 	},
 	"dependencies": {
-		"@public-ui/react": "^1.7.29",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
+		"@public-ui/react": "^3.0.1",
 		"@types/react": "^18.2.73",
 		"@types/react-dom": "^18.2.22",
 		"@typescript-eslint/eslint-plugin": "^6.21.0",

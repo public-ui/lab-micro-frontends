@@ -14,8 +14,10 @@
 	"dependencies": {
 		"kolibri-v1-provider": "workspace:*",
 		"kolibri-v2-provider": "workspace:*",
+		"kolibri-v3-provider": "workspace:*",
 		"module-v1": "workspace:*",
 		"module-v2": "workspace:*",
+		"module-v3": "workspace:*",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},

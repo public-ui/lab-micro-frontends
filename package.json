@@ -11,7 +11,7 @@
 		"update": "pnpm ncu:patch && pnpm ncu:minor && pnpm ncu:major"
 	},
 	"engines": {
-		"pnpm": "^9"
+		"pnpm": "^10"
 	},
 	"dependencies": {
 		"@public-ui/components": "2.0.12",
